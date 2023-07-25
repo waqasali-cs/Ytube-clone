@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+nav{
+    box-shadow: 0 0 0.1rem 0.1rem rgb(250, 246, 246);
+    padding: 1rem 0;
+}
+
+.top-main, .left,.middle,.sidebar,.sidebardiv,form{
+    display: flex;
+}
+.top-main{
+    padding: 3rem;
+}
+
+.top-main, .left{
+    justify-content: space-between;
+    align-items: center;
+}
+.left,.sidebardiv{
+    gap: 0.3rem;
+}
+
+.top-main{
+    padding:0.3rem 0.2rem;
+}
+
+ .right,
+ .sidebar
+ {
+    display: none;
+}
+
+.line{
+    background: #000;
+    width: 1rem;
+    height: 0.15rem;
+    margin-bottom: 0.2rem;
+}
+
+.logo-text a{
+    font-size: 1rem;
+    margin-left: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 1.4rem;
+    color: red;
+    
+}
+
+#menu-icon{
+    display: none;
+}
+
+#menu-icon:checked ~.sidebar{
+    background: rgb(61, 52, 52);
+    opacity: 0.8;
+    color:#fff;
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 10rem;
+    justify-content: center;
+    top: -2rem;
+    left: 0;
+    z-index: 100 href="";
+    
+}
+.close-menu{
+    position: absolute;
+    top: -0.5rem;
+    right: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.sidebar-items{
+    padding-top: 2rem;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebardiv,.sidebardiv a{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.search-area{
+    border-right: none;
+    border-radius: 2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+}
+.search-area::placeholder{
+    padding-left: 1rem;
+}
+
+form{
+    justify-content: flex-end;
+    /* align-items: center; */
+}
+
+.Search-button{
+    padding: 0 0.4rem;
+    border-left: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.middle{
+    justify-content: center;
+    flex: 1;
+}
+form{
+    width: 60%;
+}
+
